@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+
+	"name": "Wiki",
+	"version": "1.0",
+	"description": "Quickly search meanings & crisp descriptions.",
+	"content_security_policy": "script-src 'self' http://maxcdn.bootstrapcdn.com; object-src 'self'",
+	"browser_action":	{
+	"default_icon": "Images/wikipedia6.png",
+	"default_popup": "WikiSearch.html"
+	},
+	"content_scripts": [ {
+		"matches": ["<all_urls>"],
+		"js": ["Working.js"]
+		}],
+	"web_accessible_resources": [
+        "jquery-2.1.4.min.js"
+    ],
+	"permissions": [
+		"http://*/*",
+		"https://*/*",
+		"tabs"
+	]
+}
