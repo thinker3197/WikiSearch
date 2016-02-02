@@ -7,7 +7,7 @@ function Search()
     {
         document.getElementById("wiki").style.width = "600px";
         document.getElementById('wiki').innerHTML = data;
-
+        
     }).fail(function() {
 
         document.getElementById("wiki").style.height = "200px";
