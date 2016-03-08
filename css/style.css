@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Adam CG Pro";
+    src: url(../fonts/ADAM.CG-PRO.otf) format("opentype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: "Acumin Pro", "Helvetica Neue", sans-serif;
+}
+
+body {
+    min-width: 640px;
+    border: solid 1px #EFEFEF;
+    overflow: hidden;
+}
+
+.page-container {
+    transform: translateY(0%);
+}
+
+.container-h {
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/WikipediaIcon.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.container-h h1 {
+    font-family: "Adam CG Pro", "Helvetica Neue", sans-serif;
+    letter-spacing: 9px;
+    font-size: 4em;
+}
+
+.container-h input[type="text"] {
+    border-style: none;
+    padding: 10px 20px;
+    padding-left: 43px;
+    max-width: 500px;
+    width: 60%;
+    margin-top: 20px;
+    height: 20px;
+    font-size: 15px;
+}
+
+.container-h i {
+    position: absolute;
+    top: 55%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    font-size: 20px;
+    color: #4f5b66;
+}
+
+.container-h .text {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.container-b,
+.page-container {
+    height: 100%;
+}
+
+.container-b {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.container-b .search-results-holder {
+    width: 30%;
+    border-right: 1px solid #EAEAEA;
+    height: 87%;
+}
+
+.container-b iframe {
+    width: 80%;
+    border-style: none;
+}
+
+.container-b #searchbox2 {
+    display: block;
+    border: 1px solid #EAEAEA;
+    padding: 10px 20px;
+    max-width: 400px;
+    width: 60%;
+    margin: 20px auto 0 auto;
+    height: 20px;
+    font-size: 15px;
+}
+
+.container-b .search-results {
+    margin-top: 30px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.container-b .results {
+    padding: 20px 20px 20px 30px;
+    color: #292929;
+}
+
+.container-b .results:hover {
+    background-color: #d4d4d4;
+}
+
+.container-b .results a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #292929;
+}
+
+.container-b .results a:hover {
+    text-decoration: underline;
+}
+
+.container-b .results p {
+    font-size: 15px;
+}
+
+.animated {
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceOutUp {
+    from {
+        -ms-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+    to {
+        -ms-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+
+.bounceOutUp {
+    -webkit-animation-name: bounceOutUp;
+    animation-name: bounceOutUp;
+}
+
+@-webkit-keyframes bounceOutDown {
+    0% {
+        -ms-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    to {
+        -ms-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
