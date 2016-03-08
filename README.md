@@ -4,8 +4,19 @@
 
 #### Installation Guide
 
-1. Download all the files of **Wiki Search** into a folder on your drive.
+1. Download the **WikiSearch.crx** file.
 2. Open Chrome > Settings > Extensions.
-3. Under the Extensions tab click on 'Load Unpacked Extension', and find the path to the folder where you copied all the files of **Wiki Search**.
+3. Drag and drop the **WikiSearch.crx** file in the Extensions window.
 4. **Wiki Search** Extension will get loaded to your Chrome toolbar.
 5. Experience a faster way to search with **Wiki Search**.
+ 
+*Contribute* :
+
+Pull requests are welcomed.
+
+1.Fork it!
+2.Create your feature branch: git checkout -b my-new-feature
+3.Commit your changes: git commit -am 'Add some feature'
+4.Push to the branch: git push origin my-new-feature
+5.Submit a pull request :D  
+
