@@ -4,18 +4,18 @@
 	"name": "Wiki",
 	"version": "1.0",
 	"description": "Quickly search meanings & crisp descriptions.",
-	"content_security_policy": "script-src 'self' http://maxcdn.bootstrapcdn.com; object-src 'self'",
+	"content_security_policy": "script-src 'self' https://en.m.wikipedia.org; object-src 'self'",
 	"browser_action":	{
 	"default_icon": "Images/wikipedia6.png",
-	"default_popup": "WikiSearch.html"
+	"default_popup": "index.html"
 	},
 	"content_scripts": [ {
 		"matches": ["<all_urls>"],
-		"js": ["Working.js"]
+		"js": ["scripts/script.js"]
 		}],
-	"web_accessible_resources": [
-        "jquery-2.1.4.min.js"
-    ],
+	"background": {
+		"scripts": ["scripts/script.js"]
+	},
 	"permissions": [
 		"webRequest",
 		"http://*/*",
