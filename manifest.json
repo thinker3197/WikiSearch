@@ -9,6 +9,11 @@
 	"default_icon": "Images/wikipedia6.png",
 	"default_popup": "index.html"
 	},
+	"icons": {
+        "16": "Images/wikipedia6.png",
+        "48": "Images/wikipedia6.png",
+        "128": "Images/wikipedia6.png"
+    },
 	"content_scripts": [ {
 		"matches": ["<all_urls>"],
 		"js": ["scripts/script.js"]
